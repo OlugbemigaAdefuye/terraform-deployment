@@ -11,7 +11,7 @@ pipeline {
         stage ("terraform Action") {
             steps {
                 echo "Terraform action is --> ${action}"
-                sh ('terraform ${action} ') 
+                sh ('terraform destroy ') 
            }
         }
     }
